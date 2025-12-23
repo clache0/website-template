@@ -6,13 +6,28 @@
   height: 56px;
 
   display: flex;
+  justify-content: space-between; /* title left, links right */
   align-items: center;
-  padding: 0 20px;
 
+  padding: 0 20px;
   background-color: #111;
   z-index: 1000;
 }
 
+/* Title on the left */
+.navbar-title {
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+/* Links container */
+.navbar-links {
+  display: flex;
+  gap: 20px; /* spacing between anchors */
+}
+
+/* Individual link styles */
 .navbar a {
   color: #fff;
   text-decoration: none;
