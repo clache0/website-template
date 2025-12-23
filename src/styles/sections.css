@@ -18,3 +18,41 @@ main {
     padding: 1rem;
   }
 }
+
+.image-text-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Reverse layout */
+.image-text-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.image-text-section .image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-text-section .text-container {
+  max-width: 500px;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .image-text-section,
+  .image-text-section.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-text-section .text-container,
+  .image-text-section.reverse .text-container {
+    max-width: 100%;
+  }
+}
+
