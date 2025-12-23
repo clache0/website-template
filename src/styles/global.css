@@ -1,4 +1,12 @@
-/* Reset & normalize styles */
+:root {
+  --primary-color: #1e90ff;          /* Navbar background, dark color */
+  --secondary-color: #fff;        /* Text color on dark background */
+  --accent-color: #eda75c;        /* Highlight, links, buttons */
+  --background-color: #f9f9f9;   /* Section background */
+  --text-color: #444;             /* Default text color */
+}
+
+/* Reset & base styles */
 *,
 *::before,
 *::after {
@@ -14,6 +22,6 @@ html {
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.5;
-  color: #111;
-  background-color: #fff;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }

@@ -1,3 +1,4 @@
+import React from "react";
 import Home from "./Home";
 import ImageTextSection from "./ImageTextSection";
 import ImageOnlySection from "./ImageOnlySection";
