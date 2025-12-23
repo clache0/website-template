@@ -56,3 +56,16 @@ main {
   }
 }
 
+.image-only-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* crop if image is larger */
+}
+
+.image-only-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fill the section, crop if needed */
+}

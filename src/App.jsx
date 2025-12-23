@@ -1,31 +1,31 @@
 import Navbar from "./components/Navbar";
 import Home from "./sections/Home";
+import ImageOnlySection from "./sections/ImageOnlySection";
 import ImageTextSection from "./sections/ImageTextSection";
 
 const sections = [
   { id: "home", label: "Home", component: <Home /> },
   {
-    id: "feature1",
-    label: "Feature 1",
+    id: "hero",
+    label: "Hero",
     component: (
-      <ImageTextSection
-        id="feature1"
-        title="Image Left, Text Right"
-        text="This is the normal layout."
-        imageUrl="https://via.placeholder.com/400x300"
+      <ImageOnlySection
+        id="hero"
+        imageUrl="https://via.placeholder.com/1200x600"
+        imageAlt="Hero banner"
+        height="80vh"
       />
     ),
   },
   {
-    id: "feature2",
-    label: "Feature 2",
+    id: "feature",
+    label: "Feature",
     component: (
       <ImageTextSection
-        id="feature2"
-        title="Image Right, Text Left"
-        text="This layout is reversed using the reverse prop."
+        id="feature"
+        title="Feature Section"
+        text="This is a reusable image-text section."
         imageUrl="https://via.placeholder.com/400x300"
-        reverse={true} // image on the right
       />
     ),
   },
