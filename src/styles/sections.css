@@ -1,13 +1,20 @@
-/* Offset content for fixed navbar */
 main {
-  margin-top: 56px;
+  margin-top: 56px; /* offset for fixed navbar */
 }
 
-/* Generic full-screen section */
 .section {
-  min-height: 100vh;
+  min-height: 100vh; /* full viewport height */
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  padding: 1rem; /* spacing on smaller screens */
+}
+
+/* Responsive text size for small devices */
+@media (max-width: 600px) {
+  .section {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
 }
