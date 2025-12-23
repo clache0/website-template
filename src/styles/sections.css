@@ -1,0 +1,13 @@
+/* Offset content for fixed navbar */
+main {
+  margin-top: 56px;
+}
+
+/* Generic full-screen section */
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
