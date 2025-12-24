@@ -1,19 +1,16 @@
 :root {
-  /* Navbar / Primary elements */
-  --primary-color: #a0b39e;          /* soft olive green, earthy */
+  /* Colors (your existing palette) */
+  --primary-color: #a0b39e;     
+  --secondary-color: hsl(0, 0%, 100%);
+  --accent-color: #e2b89c;      
+  --background-color: #f7f4ef;  
+  --text-color: #555555;        
 
-  /* Text on dark backgrounds (e.g., navbar links) */
-  --secondary-color: hsl(0, 0%, 100%); /* white, for contrast */
-
-  /* Accent / highlights / buttons / links */
-  --accent-color: #e2b89c;           /* pastel terracotta / warm highlight */
-
-  /* Backgrounds for sections, cards, page */
-  --background-color: #f7f4ef;       /* off-white, warm neutral */
-
-  /* Default body text */
-  --text-color: #555555;             /* medium dark grey, soft */
+  /* Fonts */
+  --primary-font: 'Tropikal', sans-serif;  /* headings, titles */
+  --secondary-font: 'Roboto', sans-serif; /* body text */
 }
+
 
 
 /* Reset & base styles */
@@ -30,8 +27,13 @@ html {
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: var(--secondary-font);
   line-height: 1.5;
   color: var(--text-color);
   background-color: var(--background-color);
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--primary-font);
+}
+
