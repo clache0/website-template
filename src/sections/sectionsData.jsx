@@ -3,16 +3,10 @@ import ImageTextSection from "./ImageTextSection";
 import ImageOnlySection from "./ImageOnlySection";
 import TextSection from "./TextSection";
 import { images } from "../data/images";
+import ScheduleSection from "./ScheduleSection";
+import { schedule } from "../data/schedule";
 
 export const sections = [
-  {
-    id: "home",
-    label: "Home",
-    component: (
-      <Home backgroundImage={images.cityHallStairs} />
-    ),
-  },
-
   {
     id: "hero",
     label: "Gallery",
@@ -49,6 +43,18 @@ export const sections = [
         text="Nestled in the hills of Sunol, the venue offers sweeping views, historic charm, and a relaxed, intimate atmosphere."
         align="center"
         className="light-background"
+      />
+    ),
+  },
+
+  {
+    id: "schedule",
+    label: "Schedule",
+    component: (
+      <ScheduleSection
+        id="schedule"
+        title="Schedule of the Day"
+        items={schedule}
       />
     ),
   },
