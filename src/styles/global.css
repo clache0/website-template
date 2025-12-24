@@ -1,10 +1,20 @@
 :root {
-  --primary-color: #1e90ff;          /* Navbar background, dark color */
-  --secondary-color: #fff;        /* Text color on dark background */
-  --accent-color: #eda75c;        /* Highlight, links, buttons */
-  --background-color: #f9f9f9;   /* Section background */
-  --text-color: #444;             /* Default text color */
+  /* Navbar / Primary elements */
+  --primary-color: #a0b39e;          /* soft olive green, earthy */
+
+  /* Text on dark backgrounds (e.g., navbar links) */
+  --secondary-color: hsl(0, 0%, 100%); /* white, for contrast */
+
+  /* Accent / highlights / buttons / links */
+  --accent-color: #e2b89c;           /* pastel terracotta / warm highlight */
+
+  /* Backgrounds for sections, cards, page */
+  --background-color: #f7f4ef;       /* off-white, warm neutral */
+
+  /* Default body text */
+  --text-color: #555555;             /* medium dark grey, soft */
 }
+
 
 /* Reset & base styles */
 *,
