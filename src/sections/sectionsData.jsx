@@ -3,6 +3,7 @@ import Home from "./Home";
 import ImageTextSection from "./ImageTextSection";
 import ImageOnlySection from "./ImageOnlySection";
 import TextSection from "./TextSection";
+import { images } from "../data/images";
 
 export const sections = [
   { id: "home", label: "Home", component: <Home /> },
@@ -12,8 +13,8 @@ export const sections = [
     component: (
       <ImageOnlySection
         id="hero"
-        imageUrl="https://via.placeholder.com/1200x600"
-        imageAlt="Hero banner"
+        imageUrl={images.cityHallStairs}
+        imageAlt="City Hall Stairs"
         height="80vh"
       />
     ),
@@ -24,9 +25,9 @@ export const sections = [
     component: (
       <ImageTextSection
         id="feature"
-        title="Feature Section"
-        text="This is a reusable image-text section."
-        imageUrl="https://via.placeholder.com/400x300"
+        title="Location"
+        text="it's in Sunol, CA"
+        imageUrl={images.ellistonHouse}
       />
     ),
   },
@@ -36,10 +37,10 @@ export const sections = [
     component: (
       <TextSection
         id="text"
-        title="Text Only Section"
+        title="About the venue"
         text="This section is fully reusable. You can align it, add background color, and set padding."
         align="center"
-        backgroundColor="#f9f9f9"
+        className=""
       />
     ),
   },

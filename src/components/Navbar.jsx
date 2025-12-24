@@ -20,7 +20,7 @@ export default function Navbar({ sections }) {
   return (
     <nav className="navbar" ref={navbarRef}>
       <div className="navbar-title">
-        <a href="#home">My Website</a>
+        <a href="#home">Kristine and Clayton</a>
       </div>
 
       {/* Hamburger */}
