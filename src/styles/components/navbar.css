@@ -58,6 +58,30 @@
   border-radius: 2px;
 }
 
+/* Navbar home link container */
+.navbar-home {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+/* Name (top line) */
+.navbar-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--secondary-color, #fff);
+}
+
+/* Date (bottom line) */
+.navbar-date {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--secondary-color, #fff);
+  opacity: 0.85;
+}
+
+
 /* -------------------- */
 /* Mobile styles */
 @media (max-width: 768px) {
@@ -85,3 +109,14 @@
     display: flex;
   }
 }
+
+@media (max-width: 768px) {
+  .navbar-name {
+    font-size: 1.1rem;
+  }
+
+  .navbar-date {
+    font-size: 0.7rem;
+  }
+}
+

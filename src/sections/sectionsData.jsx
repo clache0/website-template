@@ -1,4 +1,3 @@
-import React from "react";
 import Home from "./Home";
 import ImageTextSection from "./ImageTextSection";
 import ImageOnlySection from "./ImageOnlySection";
@@ -6,41 +5,64 @@ import TextSection from "./TextSection";
 import { images } from "../data/images";
 
 export const sections = [
-  { id: "home", label: "Home", component: <Home /> },
+  {
+    id: "home",
+    label: "Home",
+    component: (
+      <Home backgroundImage={images.cityHallStairs} />
+    ),
+  },
+
   {
     id: "hero",
-    label: "Hero",
+    label: "Gallery",
     component: (
       <ImageOnlySection
         id="hero"
-        imageUrl={images.cityHallStairs}
-        imageAlt="City Hall Stairs"
+        imageUrl={images.landsEnd1}
+        imageAlt="Wedding photo"
         height="80vh"
       />
     ),
   },
+
   {
-    id: "feature",
-    label: "Feature",
+    id: "location",
+    label: "Location",
     component: (
       <ImageTextSection
-        id="feature"
+        id="location"
         title="Location"
-        text="it's in Sunol, CA"
+        text="Sunol, CA"
         imageUrl={images.ellistonHouse}
       />
     ),
   },
+
   {
-    id: "text",
-    label: "Text",
+    id: "venue",
+    label: "Venue",
     component: (
       <TextSection
-        id="text"
-        title="About the venue"
-        text="This section is fully reusable. You can align it, add background color, and set padding."
+        id="venue"
+        title="About the Venue"
+        text="Nestled in the hills of Sunol, the venue offers sweeping views, historic charm, and a relaxed, intimate atmosphere."
         align="center"
-        className=""
+        className="light-background"
+      />
+    ),
+  },
+
+  {
+    id: "details",
+    label: "Details",
+    component: (
+      <ImageTextSection
+        id="details"
+        title="Wedding Details"
+        text="Ceremony and reception to follow. More information coming soon."
+        imageUrl={images.landsEndHug}
+        reverse
       />
     ),
   },

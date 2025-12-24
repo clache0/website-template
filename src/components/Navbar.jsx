@@ -5,7 +5,6 @@ export default function Navbar({ sections }) {
   const [isOpen, setIsOpen] = useState(false);
   const navbarRef = useRef(null);
 
-  // Close menu when clicking outside
   useEffect(() => {
     function handleClickOutside(event) {
       if (navbarRef.current && !navbarRef.current.contains(event.target)) {
@@ -20,7 +19,10 @@ export default function Navbar({ sections }) {
   return (
     <nav className="navbar" ref={navbarRef}>
       <div className="navbar-title">
-        <a href="#home">Home</a>
+        <a href="#home" className="navbar-home">
+          <span className="navbar-name">Kristine and Clayton</span>
+          <span className="navbar-date">October 10, 2026</span>
+        </a>
       </div>
 
       {/* Hamburger */}
