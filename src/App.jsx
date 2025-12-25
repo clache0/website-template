@@ -1,15 +1,13 @@
-import Navbar from "./components/Navbar";
-import { sections } from "./sections/sectionsData";
+// src/App.jsx
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
 
 export default function App() {
   return (
-    <>
-      <Navbar sections={sections} />
-      <main>
-        {sections.map((section) => (
-          <div key={section.id}>{section.component}</div>
-        ))}
-      </main>
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/about" element={<AboutPage />} />
+    </Routes>
   );
 }

@@ -14,8 +14,7 @@ export default function Home({ backgroundImage }) {
           : undefined
       }
     >
-      {/* <h1>Kristine and Clayton&apos;s Wedding</h1> */}
-      {/* <p className="home-date">October 10, 2026</p> */}
+      <h1>Home Page</h1>
     </section>
   );
 }
